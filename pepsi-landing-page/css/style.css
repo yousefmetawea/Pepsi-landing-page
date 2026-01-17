@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+
+* {
+    padding: 0px ; 
+    margin: 0px ; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x:hidden ;
+
+    height:3000px ;
+}
+
+.header {
+    height:100vh ; 
+    background-color: #0162be;
+    color: #fff;
+}
+
+.container {
+    margin:0px 7rem ; 
+    height:100% ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding : 25px 0px ; 
+}
+
+.container nav ul {
+    list-style: none ;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}  
+
+nav ul li a  {
+    text-decoration: none;
+    color:white ;
+    padding : 20px ; 
+}
+
+
+.logo {
+    width:50px ; 
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:70% ;
+}
+
+.pepsi-can{
+    width:220px ; 
+    animation : animation1 1s ease-out ;
+
+}
+
+.content-text h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.content-text h1 span { 
+    font-size: 70px ;
+
+}
+
+.content-text p {
+    width:60%; 
+    line-height: 1.4;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.btn1 {
+    display: inline;
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    cursor: pointer;
+    transition : all 0.2s ;
+}
+
+.btn1:hover  {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+} 
+
+.social { 
+    margin-left: 3rem;
+    animation : animation1 1s ease-out ;
+
+}
+.social a {
+    display: block;
+}
+
+.social i {
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.pepsi-type { 
+    width:100px ;
+    margin:auto ; 
+    display: block;
+    animation : animation2 1s ease-out ;
+}
+
+@keyframes animation1 {
+    0% {
+        transform :translateX(500px ); 
+
+    }
+    100% {
+        transform: translateX(0) ;
+    }
+}
+
+
+@keyframes animation2 {
+    0% {
+        transform :translateY(200px ); 
+
+    }
+    100% {
+        transform: translateY(0) ;
+    }
+}
+
+/*  Tablet  */
+@media (max-width:900px ){
+    .container {
+        margin: 0px 1rem ; 
+    }
+
+    nav ul a {
+        padding:10px ; 
+    }
+
+    .content { 
+        flex-direction: column;
+        padding :2rem 0px 0px ; 
+        text-align: center;
+    }
+
+    .pepsi-can {
+        width:100px ; 
+        margin-bottom:10px ;
+    }
+
+    
+    .header .content .content-text p {
+    width: 100%;
+}
+
+    .header .content .content-text {
+    margin-bottom: 2rem;
+}
+    .social a {
+    display: inline;
+    margin-left:2px ;
+    
+
+}
+    .social {
+    margin-left: 0px;
+}
+
+    .gallery {
+    margin-top: 35px;
+}
+}
+
+/*  Mobile  */
+@media (max-width:600px ){
+    nav {
+        display:block  ;
+    }
+
+    .logo {
+        display: block;
+        margin:0 auto 15px ;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul a {
+    font-size: 12px;
+}
+}
